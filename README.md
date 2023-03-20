@@ -1,6 +1,6 @@
 # crudapplication
 
 ```
-git clone url
-
+git  crud application
+  
 ```
