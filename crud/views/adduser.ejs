@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adduser</title>
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <h1><a href="/">Vagon</a></h1>
+        <nav>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                    <path d="M138 958V444.333L480 187l343 257v514H565V650H395v308H138Z" />
+                </svg>
+                <p><a href="/">Home</a></p>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                    <path
+                        d="M745 623V499H621v-69h124V307h69v123h123v69H814v124h-69Zm-383.044-60q-76.826 0-124.391-48.065Q190 466.87 190 390.704q0-76.167 47.406-123.935Q284.812 219 361.637 219q76.825 0 125.094 47.656Q535 314.312 535 391.204q0 75.666-48.109 123.731Q438.781 563 361.956 563ZM20 926V810q0-42.887 21.695-75.661Q63.391 701.565 102 684q76-35 136.22-48.5Q298.441 622 361.262 622 426 622 486 636t136 48q38.609 17.42 60.805 49.671Q705 765.922 705 809.773V926H20Z" />
+                </svg>
+                <p><a href="/adduser">Add User</a></p>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                    <path
+                        d="M480.297 997Q392 997 315.5 965T181 874.5Q123 816 91 739.051q-32-76.948-32-165.52Q59 485 91 408.5t90-133q58-56.5 134.449-89 76.448-32.5 165.02-32.5Q569 154 645 186.5t134 89q58 56.5 90.5 133.138T902 574q0 88.404-32.5 165.202T779 874.5Q721 933 644.774 965t-164.477 32ZM479 909q33-34 55.5-79.5T573 719H388q13 61 36.094 108.158T479 909Zm-81-12q-25-36-41.875-79.326Q339.25 774.349 327 719H181q36 68.806 84.5 109.403Q314 869 398 897Zm163-1q71-20 126.5-67T779 719H635.142Q622 773 604 816.5T561 896ZM162.035 663H317q-4-27-4.5-48t-.5-41q0-25 1-43.5t5-42.5H162.035Q156 512 153 530t-3 44q0 25 3 45t9.035 44Zm214.996 0H584q3-31 3.5-50t.5-39q0-20-.5-37.5t-3.531-48.5H377q-4 31-5 48.5t-1 37.5q0 20 1 39t5.031 50ZM643 663h155q4-24 7.5-44t3.5-45q0-26-3.5-44t-7.5-42H644q1 37 2 53.675 1 16.675 1 32.325 0 21-1.5 40t-2.5 49Zm-8.858-232H779q-34-66-89.5-113T560 254q25 37 43 79t31.142 98ZM388 431h186q-9-49.721-34.5-100.361Q514 280 479 245q-29 25-50.5 68.5T388 431Zm-207 0h146.816Q339 378 355 336.5t42-81.5q-75 17-129 62t-87 114Z" />
+                </svg>
+                <p><a href="">About</a></p>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                    <path
+                        d="M561 530h251V353H561v177Zm126-36-102-77v-40l101 77 102-77v40l-101 77ZM95 942q-37.587 0-64.794-26.912Q3 888.175 3 851V300q0-37.175 27.206-64.088Q57.413 209 95 209h770q36.125 0 63.562 26.912Q956 262.825 956 300v551q0 37.175-27.438 64.088Q901.125 942 865 942H95Zm253-289q51.167 0 86.583-36.5Q470 580 470 528.5q0-50.5-35.382-86.5-35.383-36-87-36Q295 406 259 441.917 223 477.833 223 529q0 51 35.792 87.5Q294.583 653 348 653ZM90 863h517q-45-65-110.294-105.5-65.293-40.5-146.5-40.5Q271 717 202 757.5 133 798 90 863Z" />
+                </svg>
+                <p><a href="">Contact</a></p>
+            </div>
+        </nav>
+    </div>
+    <form action="/adduser" class="form" method="POST" id="add-form" enctype="multipart/form-data">
+        <div class="head">
+            <h1>Add New User</h1>
+        </div>
+
+        <div class="inputs">
+            <div class="input">
+                <label for="name">Name</label> <br>
+                <input type="text" name="name" id="name" placeholder="Enter name">
+            </div>
+            <div class="input">
+                <label for="email">email</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter email">
+            </div>
+            <div class="input">
+                <label for="phone">Phone</label><br>
+                <input type="tel" name="phone" placeholder="Enter phone" id="phone">
+            </div>
+            <div class="input">
+                <label for="image">Select Image</label><br>
+                <input type="file" name="image" id="image" required>
+            </div>
+            <div>
+                <button>Add User</button>
+            </div>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

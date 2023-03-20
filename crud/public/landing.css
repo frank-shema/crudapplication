@@ -1,0 +1,95 @@
+.container{
+    background-color: rgba(0, 0, 0, 0.306);
+    display: flex;
+    flex-direction: row;
+    gap: 60%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    padding-left: 100px;
+    color: #0f98ed;
+    font-family: cursive    ;
+}
+.container div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+.container p a{
+    background-color: #071a52;
+    padding:10px 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-size: 20px;
+    border-radius: 40px;
+    box-shadow: 4px 4px 4px  #a7ff83;
+}
+.now{
+    /* text-align: center; */
+    margin: 5% 400px;
+}
+.now  div {
+    background-color: #fcefee;
+  height: 200px;
+  justify-content: center;
+  text-transform: capitalize;
+}
+.now  div p{
+    text-align: center;
+    padding-top: 15%;
+    font-size: large;
+    font-weight: 500;
+    color: #0e153a;
+    font-style: italic;
+}
+.now div + p{
+    background-color: #fccde2;
+    padding: 20px;
+
+}
+.form{
+    margin-top: 70px;
+    width: 500px;
+    margin-left: 35%;
+    background-color: #e2f3f5;
+    border-radius: 40px;
+}
+.logg{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+ padding-left: 0% ;
+}
+.log{
+    display: flex;
+    flex-direction: column;
+}
+.log label,input{
+   position: relative;
+   left: 30px;
+}
+.log input{
+    width: 350px;
+    height: 50px;
+
+}
+button{
+    padding:20px 50px;
+    border-radius: 40px;
+    border: 2px #c5e3f6 solid;
+    background-color: #c5e3f6;
+    margin: 0px 0px 40px 150px;
+
+}
+button:hover{
+    background-color: #fccde2;
+}
+button a{
+    text-decoration: none;
+    font-weight: 900;
+}

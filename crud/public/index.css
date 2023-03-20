@@ -1,0 +1,117 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 30%;
+    background-color: gray;
+    height: 20%;
+
+}
+
+.navbar nav {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-top: 30px;
+}
+
+.navbar h1 {
+    margin-left: 40px;
+}
+
+.navbar h1 a {
+    background-color: rgba(0, 0, 0, 0.472);
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 40px;
+    font-style: italic;
+    font-family: cursive;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar div svg{
+    height: 30px;
+}
+.navbar  nav div{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.navbar div p {
+    margin-top: 5px;
+}
+.navbar div p a{
+    text-decoration: none;
+    color:#071e3d;
+    font-weight: bolder;
+}
+.navbar div:hover{
+background-color: #fcefee;
+padding: 0px 10px;
+border-radius: 40px;
+}
+.form{
+  justify-content: center;
+  gap: 20px;
+  font-family: cursive;
+  width: 35%;
+  margin: auto;
+  margin-top: 10px;
+  border: 2px white solid;
+  box-shadow: 5px 5px 5px 5px  #fcefee;
+}
+.head{
+    font-weight: 600;
+    color: #303a52;
+    background-color: #c5e3f6;
+    text-align: center;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.input{
+  text-transform: capitalize;
+}
+.input input{
+    width: 90%;
+    padding: 10px;
+    border: 2px rgba(0, 0, 0, 0.071) solid;
+}
+.inputs button{
+    border: 2px rgba(0, 0, 0, 0.071) solid;
+    width: 90%;
+    padding: 10px;
+    background-color:#c5e3f6; 
+}    
+table{
+    margin: auto;
+    margin-top: 30px;
+    width: 80%;
+    text-align: center;
+}
+
+.table{
+    background-color: #071e3d;
+    color: white;
+    height: 40px;
+    
+}
+.body {
+    background-color:#f5f5f5;
+    height: 40px;   
+}
+.body:nth-child(2n){
+    background-color: #c5e3f6;;
+}
+.body td a svg{
+    height: 25px;
+}
+.table td,.body  td{
+    width: 150px;
+}
